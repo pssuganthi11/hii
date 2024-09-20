@@ -1,5 +1,7 @@
 
 import { useState } from "react";
+import './Portfolio.scss'
+
 import ltor from "../Assets/ltor.png";
 import rtol from "../Assets/rtol.png";
 
@@ -86,11 +88,11 @@ function portfolio() {
             </div>
           </div>
           <div>
-            <img src={ltor} alt="Suganthi" width="300px" />
+            <img src={rtol} alt="Suganthi" width="300px" />
           </div>
         </section>
         <section className="about-section" id="About_section">
-          <img src={rtol} />
+          <img src={ ltor} />
           <div className="description">
             <h4>
               I'm <span>Web Developer</span>
@@ -98,23 +100,23 @@ function portfolio() {
 
             <ul>
               <li>
-                <strong>Experience:</strong>1.8 years
+                <strong>Experience:</strong> 1.8 years
               </li>
               <li>
-                <strong>Skills:</strong>React
+                <strong>Skills:</strong> React
               </li>
               <li>
                 <strong>Email:</strong>
-                <a href="mailto:pssuganthi11@gmail.com">
-                  pssuganthi11@gmail.com
+                <a href="mailto:pssuganthi11@gmail.com"> pssuganthi11@gmail.com
+                   
                 </a>
               </li>
               <li>
                 <strong>Contact No:</strong>
-                <a href="tel:+91 7603992425">+91 7603992425</a>
+                <a href="tel:+91 7603992425"> +91 7603992425</a>
               </li>
               <li>
-                <strong>Address:</strong>Salem
+                <strong>Address:</strong> Salem
               </li>
             </ul>
             <div>
@@ -124,7 +126,7 @@ function portfolio() {
         </section>
         <section className="my-works-section" id="MyWork-section">
           <div className="my-works-section-title">
-            <h4>My Works</h4>
+            <h4>My<span> Works</span></h4>
           </div>
           <div className="workcontainer">
             <div className="my-works-section-box">
@@ -165,7 +167,7 @@ function portfolio() {
           </div>
         </section>
         <section className="contact-section" id="Contact-section">
-          <h4>Contact Me</h4>
+          <h4>Contact <span>Me</span></h4>
           <form>
             <div>
               <input type="text" placeholder="Name" />

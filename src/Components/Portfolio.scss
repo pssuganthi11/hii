@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+    --primaryyellow: #ffbd38;
+    --yellowhover: #f9b01f;
+
+    --lightblack: #22282f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header span {
+    color: var(--primaryyellow);
+    letter-spacing: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 40px;
+}
+header ul > li a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    // font-weight: bold;
+}
+header ul > li a:hover {
+    color: var(--primaryyellow);
+}
+header div .btn {
+    padding: 10px 20px;
+    font-family: "Nunito", sans-serif;
+    border: solid 1px var(--primaryyellow);
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px var(--primaryyellow);
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+/* home section*/
+
+.imagecontainer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px 120px 0 120px;
+}
+.imagecontainer .namecon {
+    font-size: 40px;
+    font-weight: 600;
+}
+.imagecontainer .socialicons ul {
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+}
+.imagecontainer .socialicons li > a {
+    margin-right: 10px;
+    color: white;
+}
+.imagecontainer .socialicons li > a i.fa-facebook:hover {
+    color: blue;
+}
+.imagecontainer .socialicons li > a i.fa-linkedin:hover {
+    color: blue;
+}
+.imagecontainer .socialicons li > a i.fa-x-twitter:hover {
+    color: blue;
+}
+.imagecontainer .socialicons li > a i.fa-square-instagram:hover {
+    color: #ffbd38;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    border: none;
+    font-family: "Nunito", sans-serif;
+}
+.btn.btn-primary {
+    background-color: var(--primaryyellow);
+    color: black;
+}
+.btn.btn-primary:hover {
+    background-color: var(--yellowhover);
+}
+.btn.btn-outlined {
+    border: solid 1px var(--primaryyellow);
+    background-color: black;
+    color: white;
+}
+.btn.btn-outlined:hover {
+    background-color: var(--yellowhover);
+    border: solid 1px var(--primaryyellow);
+    color: black;
+}
+.imagecontainer .description {
+    color: gray;
+}
+
+/*About section*/
+
+.about-section {
+    background-color: var(--lightblack);
+    display: flex;
+    padding: 30px 60px;
+    justify-content: center;
+    align-items: center;
+}
+.about-section img {
+    width: 250px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 1px 1px 5px var(--primaryyellow);
+    // border: solid 2px var(--primaryyellow);
+}
+.about-section .description {
+    margin-left: 100px;
+    font-weight: 400;
+    ul {
+        list-style: none;
+        margin: 10px 0;
+        li {
+            margin-bottom: 10px;
+            color: gray;
+            a {
+                text-decoration: none;
+                color: gray;
+            }
+            a:hover {
+                color: var(--primaryyellow);
+            }
+            strong {
+                color: white;
+            }
+        }
+    }
+}
+.about-section h4 {
+    font-size: 30px;
+    color: white;
+    span {
+        color: var(--primaryyellow);
+    }
+}
+
+/*work section*/
+.my-works-section {
+    background-color: black;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    .my-works-section-box {
+        background-color: var(--lightblack);
+        padding: 60px 30px;
+        max-width: 300px;
+        text-align: left;
+        border-radius: 10px;
+        margin-right: 40px;
+        p {
+            color: gray;
+            font-size: 14px;
+        }
+        a {
+            text-decoration: none;
+            color: var(--primaryyellow);
+        }
+        .my-works-section-box__decs {
+            margin: 20px 0;
+            h4 {
+                padding-bottom: 20px;
+                color: var(--yellowhover);
+            }
+        }
+        .my-works-section-box__icons {
+            background-color: var(--primaryyellow);
+            padding: 10px;
+            border-radius: 60px;
+        }
+    }
+    .my-works-section-box:hover {
+        background-color: black;
+        border: solid 1px var(--yellowhover);
+    }
+    .workcontainer {
+        display: flex;
+        justify-content: center;
+    }
+    .my-works-section-title {
+        font-size: 30px;
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 20px;
+        font-weight: 200;
+        span {
+            color: var(--primaryyellow);
+        }
+    }
+}
+
+/*Contact Me*/
+
+.contact-section {
+    background-color: var(--lightblack);
+    text-align: center;
+    padding: 50px;
+    h4 {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 30px;
+        padding-bottom: 10px;
+        span {
+            color: var(--primaryyellow);
+        }
+    }
+    form input,
+    textarea {
+        padding: 5px 10px;
+        outline: none;
+        width: 350px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+        resize: none;
+        background-color: black;
+        color: white;
+    }
+}
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    h4{
+        padding: 20px;
+
+    }
+    a {
+        color: var(--primaryyellow);
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+    }
+}
+
+/*media Query*/
+
+/* For tablets */
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+        div span.logo {
+            letter-spacing: 2px;
+        }
+      
+
+    }
+    .imagecontainer {
+        flex-direction: row;
+        div .btn.btn-outlined{
+            margin-bottom: 20px;
+        }
+        h2 span{
+            color: var(--primaryyellow);
+        }
+      
+    }
+    .about-section {
+        flex-direction: column;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* For mobile screens */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    header .btn {
+        margin: 20px 0;
+    }
+    .imagecontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagecontainer img {
+        margin: 20px 0;
+    }
+    .my-works-section .workcontainer {
+        flex-direction: column;
+    }
+}
